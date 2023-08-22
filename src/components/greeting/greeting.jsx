@@ -8,10 +8,10 @@
 
 export default function Greeting() {
   return (
-    <div>
+    <>
       <h1>Felicidades Generation por su 8o Aniversario</h1>
       <h2>Pueden llegar a la pachanga</h2>
-    </div>
+    </>
   );
 }
 
