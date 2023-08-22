@@ -24,3 +24,14 @@ export const Navbr = () => {
     </>
   )
 }
+
+const Footer = ()=> { 
+    return (
+        <>
+            <p>Derechos no reservados 2023. </p>
+            <p>Lo que está en méxico pertenece a los mexicanos.</p>
+        </>
+    )
+}
+
+export {Footer};
