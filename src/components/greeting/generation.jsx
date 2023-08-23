@@ -15,7 +15,8 @@ export default function Generation() {
         <strong>Generation MX</strong>Generation MX, ¡mi ruta en casa!
       </p>
       <h4 id="subtitle">Participantes</h4>
-      {studentsinfo.map(studentsinfo => <Student info={studentsinfo}/>)}
+      {studentsinfo.map(studentsinfo => 
+              <Student info={studentsinfo}>Gen Ch 30 </Student>)}
     </>
   );
 }
