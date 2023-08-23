@@ -15,18 +15,18 @@ export const Counter = () => {
     console.log ("Contador" + counterValue)
   };
 
-  const handleReset = () =>{ 
-    console.log ("Estás en el 100 otra vez")
-    counterValue = 100 
+//   const handleReset = () =>{ 
+//     console.log ("Estás en el 100 otra vez")
+//     counterValue = 100 
     
-  }
+//   }
 
   return (
     <>
       <p>Contador: {counterValue}</p>
       <button onClick={handleDecrement}> Decrementar</button>
       <button onClick={handleIncrement}> Incrementar</button>
-      <button onClick={handleReset}> Resetear</button>
+      <button onClick={()=>counterValue = 100 }> Resetear</button>
 
     </>
   );
