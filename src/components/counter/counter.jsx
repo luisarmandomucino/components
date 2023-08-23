@@ -1,17 +1,24 @@
+import { useState } from "react";
+
 export const Counter = () => {
   console.log("Estoy dentro del componente Counter");
 
-  let counterValue = 100;
+//   let counterValue = 100;
+
+  // hook useState 
+  // useState permite a los componentes gestionar su propio estado
+  const [ counterValue, setCounter] = useState( 100);
+
 
   const handleIncrement = () => {
     console.log("Estoy en fnc increment");
-    counterValue++;
+    setCounter (counterValue +1 );
     console.log ("Contador" + counterValue)
   };
 
   const handleDecrement = () => {
     console.log("Estoy en la fnc decrement");
-    counterValue--;
+    setCounter (counterValue -1 );
     console.log ("Contador" + counterValue)
   };
 
@@ -26,7 +33,7 @@ export const Counter = () => {
       <p>Contador: {counterValue}</p>
       <button onClick={handleDecrement}> Decrementar</button>
       <button onClick={handleIncrement}> Incrementar</button>
-      <button onClick={()=>counterValue = 100 }> Resetear</button>
+      <button onClick={(event) => setCounter(100)}> Resetear</button> 
 
     </>
   );
